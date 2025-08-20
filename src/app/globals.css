@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
-body {
-  @apply bg-black text-white;
+@theme {
+  --spacing-54: 13.5rem;
+
+  --font-figtree: var(--font-figtree);
+  --font-urbanist: var(--font-urbanist);
 }
 
 @layer base {
+  body {
+    @apply bg-black text-white font-figtree;
+  }
 }
 
 @layer components {
 }
 
 @layer utilities {
+  .container {
+    @apply w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-54;
+  }
   .position-center {
     @apply flex justify-center items-center;
   }
