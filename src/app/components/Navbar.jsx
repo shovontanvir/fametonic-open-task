@@ -5,7 +5,7 @@ import burgerMenu from "../../../public/burger-menu.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-start container my-8">
+    <nav className="flex justify-between items-start container">
       <div className="basis-full md:basis-1/2 flex items-center justify-center md:justify-start relative">
         <Image
           src={logo}
